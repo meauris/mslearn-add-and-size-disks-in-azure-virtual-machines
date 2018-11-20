@@ -22,7 +22,7 @@ EOF
 # Write a file system to the partition.
 #  ext4 creates an ext4 filesystem.
 #  /dev/sdc1 is the device name.
-sudo mkfs -t ext4 /dev/sdc1 -L uploads
+sudo mkfs -t ext4 -L uploads /dev/sdc1
 
 # Create the /uploads directory, which we'll use as our mount point.
 sudo mkdir /uploads
